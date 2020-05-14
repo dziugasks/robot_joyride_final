@@ -4197,10 +4197,27 @@ gdjs.GameCode.GDExtraPointsCoinObjects1.length = k;}if (gdjs.GameCode.condition0
 
 gdjs.GameCode.GDPlayerObjects1.createFrom(runtimeScene.getObjects("Player"));
 gdjs.GameCode.GDShieldObjects1.createFrom(runtimeScene.getObjects("Shield"));
+gdjs.GameCode.GDscoreObjects1.createFrom(runtimeScene.getObjects("score"));
 
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDPlayerObjects1Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDShieldObjects1Objects, false, runtimeScene, false);
+{gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition0IsTrue_0;
+gdjs.GameCode.condition0IsTrue_1.val = false;
+gdjs.GameCode.condition1IsTrue_1.val = false;
+{
+gdjs.GameCode.condition0IsTrue_1.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDPlayerObjects1Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDShieldObjects1Objects, false, runtimeScene, false);
+}if ( gdjs.GameCode.condition0IsTrue_1.val ) {
+{
+for(var i = 0, k = 0, l = gdjs.GameCode.GDscoreObjects1.length;i<l;++i) {
+    if ( gdjs.GameCode.GDscoreObjects1[i].getVariableNumber(gdjs.GameCode.GDscoreObjects1[i].getVariables().getFromIndex(0)) > 200 ) {
+        gdjs.GameCode.condition1IsTrue_1.val = true;
+        gdjs.GameCode.GDscoreObjects1[k] = gdjs.GameCode.GDscoreObjects1[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDscoreObjects1.length = k;}}
+gdjs.GameCode.conditionTrue_1.val = true && gdjs.GameCode.condition0IsTrue_1.val && gdjs.GameCode.condition1IsTrue_1.val;
+}
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.GameCode.GDPlayerObjects1 */
 /* Reuse gdjs.GameCode.GDShieldObjects1 */
