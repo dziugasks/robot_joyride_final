@@ -536,7 +536,7 @@ gdjs.GameCode.condition0IsTrue_0.val = false;
 gdjs.GameCode.condition0IsTrue_1.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.GameCode.GDscoreObjects1.length;i<l;++i) {
-    if ( gdjs.GameCode.GDscoreObjects1[i].getVariableNumber(gdjs.GameCode.GDscoreObjects1[i].getVariables().getFromIndex(0)) >= 3000 ) {
+    if ( gdjs.GameCode.GDscoreObjects1[i].getVariableNumber(gdjs.GameCode.GDscoreObjects1[i].getVariables().getFromIndex(0)) >= 4000 ) {
         gdjs.GameCode.condition0IsTrue_1.val = true;
         gdjs.GameCode.GDscoreObjects1[k] = gdjs.GameCode.GDscoreObjects1[i];
         ++k;
@@ -599,7 +599,7 @@ gdjs.GameCode.condition0IsTrue_0.val = false;
 gdjs.GameCode.condition0IsTrue_1.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.GameCode.GDscoreObjects1.length;i<l;++i) {
-    if ( gdjs.GameCode.GDscoreObjects1[i].getVariableNumber(gdjs.GameCode.GDscoreObjects1[i].getVariables().getFromIndex(0)) >= 4000 ) {
+    if ( gdjs.GameCode.GDscoreObjects1[i].getVariableNumber(gdjs.GameCode.GDscoreObjects1[i].getVariables().getFromIndex(0)) >= 5000 ) {
         gdjs.GameCode.condition0IsTrue_1.val = true;
         gdjs.GameCode.GDscoreObjects1[k] = gdjs.GameCode.GDscoreObjects1[i];
         ++k;
